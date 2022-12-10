@@ -1,0 +1,20 @@
+Description: Spring boot - Spring Data JPA - JUnit - RestController - H2 or MySQL DB - Mapping examples
+
+Demo 1 Youssfi https://www.youtube.com/watch?v=ujxQrBjZkTU
+Demo 2 Youssfi https://www.youtube.com/watch?v=Kfv_7m8INlU
+Demo 3 Youssfi https://www.youtube.com/watch?v=s6p2dE3qrsU
+
+Exception = failed to lazily initialize a collection of role: com.tuto.entities.Patient.listRendezVous: could not initialize proxy - no Session
+=> Lazy fatch not working with spring boot
+Solutions: https://www.youtube.com/watch?v=XbT5oRJFp2E
+
+Par defaut: 
+OneToOne et OneToMany sont fetch EAGER
+ManyToOne et ManyToMany sont fetch LAZY
+il est interdit dans spring d'avoir 2 EAGERs successifs
+
+Dans l heritage, on peut avoir 3 strategies pour le definir:
+SINGLE_TABLE
+TABLE_PER_CLASS (X)
+JOINED_TABLE
+Voir les 3 repositories crées
