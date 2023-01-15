@@ -283,6 +283,10 @@ public class JpaHibernateSpringDataApplication implements CommandLineRunner {
 			
 		UserService myBean = applicationContext.getBean(UserService.class);
 		logger.info("UserService.getApplicationId = " + myBean.getApplicationId());
+		
+		// test comment 1
+		// test comment 2
+		// test comment 3
 
 	}
 }
